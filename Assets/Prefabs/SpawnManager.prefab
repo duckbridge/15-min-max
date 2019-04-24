@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: OverrideSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: -1003283189, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!1 &100002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400002}
+  - 114: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: -1003283189, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  - 114: {fileID: 11400004}
+  m_Layer: 0
+  m_Name: NormalSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: -1003283189, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 346.01709, y: -11.6138706, z: 10.8134441}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400004}
+  - {fileID: 400000}
+  m_Father: {fileID: 0}
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd19c5d8eada5459f9b02faa752d3911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 5
+  spawnDelay: 3
+  allRooms:
+  - {fileID: 11400000, guid: cb83a5106516c5e4a958f906551c1ed0, type: 2}
+  - {fileID: 11400000, guid: c0cdc3180f980f14fa53ebe2300ba33c, type: 2}
+  - {fileID: 11400016, guid: 1292b826d101c0d40ab83bea54291a4a, type: 2}
+  - {fileID: 11400000, guid: e5ad3092326d7da44a9d5c5e0850839e, type: 2}
+  - {fileID: 11400004, guid: 9e321993c1e27d54a87c9e3237b2cc78, type: 2}
+  - {fileID: 11400016, guid: 00d8fdcd840770f4ca72b389d9e4ee7f, type: 2}
+  - {fileID: 11400000, guid: 9ec16f043918c3b4bb089883039fd24b, type: 2}
+  - {fileID: 11400000, guid: 27cfa7aa151986843a06c758cd017acc, type: 2}
+  - {fileID: 11400012, guid: 06308b56fadc88d41a1c28f3517b2144, type: 2}
+  - {fileID: 11400012, guid: e2291be5edbd2ce4bae657411f4bc45f, type: 2}
+  - {fileID: 11400010, guid: 13c87bd894fe91647bf6d0d7cfd9d5d3, type: 2}
+  - {fileID: 11400002, guid: 688aa1ae5adda2d4bbbaec226387e05b, type: 2}
+  - {fileID: 11400000, guid: 2079e09b98205664ab462fb6210d3213, type: 2}
+  - {fileID: 11400000, guid: c0f141362431f184da782c96a154cb1a, type: 2}
+  - {fileID: 11400012, guid: 62b0a6c91193fe34e81c090acf6f4f8c, type: 2}
+  - {fileID: 11400014, guid: 06f4f4ed39209494f80276116b030629, type: 2}
+  - {fileID: 11400016, guid: 6405412e66fc36a449f5046ba9755445, type: 2}
+  - {fileID: 11400016, guid: ce69e0922db81d048b3012558598abc3, type: 2}
+  - {fileID: 11400014, guid: 1195bd5cd03d50a439ff2eacfc9f88ae, type: 2}
+  maxSpawnedObjects: 6
+  overrideRandomRoomType: 0
+  randomRoomTypeOverride: 0
+  roomLevelToOverride: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c576366a762e142b58820788493af63b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSpawner: {fileID: 11400004}
+  useOverrideSpawner: 0
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd0b514a29da4e58b013c266b192fc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 5
+  spawnDelay: 3
+  allRooms:
+  - {fileID: 11400000, guid: cb83a5106516c5e4a958f906551c1ed0, type: 2}
+  - {fileID: 11400000, guid: c0cdc3180f980f14fa53ebe2300ba33c, type: 2}
+  - {fileID: 11400016, guid: 1292b826d101c0d40ab83bea54291a4a, type: 2}
+  - {fileID: 11400000, guid: e5ad3092326d7da44a9d5c5e0850839e, type: 2}
+  - {fileID: 11400004, guid: 9e321993c1e27d54a87c9e3237b2cc78, type: 2}
+  - {fileID: 11400016, guid: 00d8fdcd840770f4ca72b389d9e4ee7f, type: 2}
+  - {fileID: 11400000, guid: 9ec16f043918c3b4bb089883039fd24b, type: 2}
+  - {fileID: 11400000, guid: 27cfa7aa151986843a06c758cd017acc, type: 2}
+  - {fileID: 11400012, guid: 06308b56fadc88d41a1c28f3517b2144, type: 2}
+  - {fileID: 11400012, guid: e2291be5edbd2ce4bae657411f4bc45f, type: 2}
+  - {fileID: 11400002, guid: 688aa1ae5adda2d4bbbaec226387e05b, type: 2}
+  - {fileID: 11400010, guid: 13c87bd894fe91647bf6d0d7cfd9d5d3, type: 2}
+  - {fileID: 11400000, guid: c0f141362431f184da782c96a154cb1a, type: 2}
+  - {fileID: 11400000, guid: 2079e09b98205664ab462fb6210d3213, type: 2}
+  - {fileID: 11400012, guid: 62b0a6c91193fe34e81c090acf6f4f8c, type: 2}
+  - {fileID: 11400014, guid: 06f4f4ed39209494f80276116b030629, type: 2}
+  - {fileID: 11400016, guid: 6405412e66fc36a449f5046ba9755445, type: 2}
+  - {fileID: 11400016, guid: ce69e0922db81d048b3012558598abc3, type: 2}
+  - {fileID: 11400014, guid: 1195bd5cd03d50a439ff2eacfc9f88ae, type: 2}
+  maxSpawnedObjects: 6
+  unlockedRoomTypes: 0100000006000000
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100002}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SunAnimation
+  serializedVersion: 4
+  m_AnimationType: 1
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -60, y: -72.4628143, z: 100}
+        inSlope: {x: 26.0869579, y: 73.345314, z: 0}
+        outSlope: {x: 26.0869579, y: 73.345314, z: 0}
+        tangentMode: 1076354998
+      - time: 1.5333333
+        value: {x: -20, y: 40, z: 100}
+        inSlope: {x: 26.2302933, y: 36.672657, z: 0}
+        outSlope: {x: 26.2302933, y: 36.672657, z: 0}
+        tangentMode: 1075186016
+      - time: 3.04999995
+        value: {x: 20, y: 40, z: 100}
+        inSlope: {x: 23.443222, y: -28.8366184, z: 0}
+        outSlope: {x: 23.443222, y: -28.8366184, z: 0}
+        tangentMode: 1073956917
+      - time: 5
+        value: {x: 60, y: -72.4628143, z: 100}
+        inSlope: {x: 20.5128193, y: -57.6732368, z: 0}
+        outSlope: {x: 20.5128193, y: -57.6732368, z: 0}
+        tangentMode: 10360
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: Sun
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 5
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -60
+        inSlope: 26.0869579
+        outSlope: 26.0869579
+        tangentMode: 10
+      - time: 1.5333333
+        value: -20
+        inSlope: 26.2302933
+        outSlope: 26.2302933
+        tangentMode: 10
+      - time: 3.04999995
+        value: 20
+        inSlope: 23.443222
+        outSlope: 23.443222
+        tangentMode: 10
+      - time: 5
+        value: 60
+        inSlope: 20.5128193
+        outSlope: 20.5128193
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: Sun
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -72.4628143
+        inSlope: 73.345314
+        outSlope: 73.345314
+        tangentMode: 10
+      - time: 1.5333333
+        value: 40
+        inSlope: 36.672657
+        outSlope: 36.672657
+        tangentMode: 10
+      - time: 3.04999995
+        value: 40
+        inSlope: -28.8366184
+        outSlope: -28.8366184
+        tangentMode: 10
+      - time: 5
+        value: -72.4628143
+        inSlope: -57.6732368
+        outSlope: -57.6732368
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: Sun
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 100
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5333333
+        value: 100
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.04999995
+        value: 100
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: 100
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: Sun
+    classID: 4
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_Events:
+  - time: 4.98333311
+    functionName: OnSunSet
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
